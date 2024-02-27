@@ -7,6 +7,29 @@ body {
   background-image: url(../../public/graphy-dark.png);
 }
 
+/* Width */
+::-webkit-scrollbar {
+  width: 5px;
+  margin: 2px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  box-shadow: inset 0 0 0px transparent; 
+  border-radius: 10px;
+}
+ 
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: transparent; 
+  border-radius: 10px;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #4f46e5; 
+}
+
 h1{
   font-size: 12vw;
   line-height: 10vw;
@@ -19,8 +42,49 @@ h2{
   color: beige;
 }
 
+h3{
+  font-size: 2.6vw;
+  font-family: Roboto;
+  font-weight: 500;
+}
+
+p{
+  font-size: 1.2vw;
+  font-family: Roboto;
+  font-weight: 400;
+}
+
 li{
   font-size: 1.5vw;
   font-family: sans-serif;
   font-weight: 300;
+}
+
+@media only screen and (max-width: 600px) {
+  h1{
+    font-size: 20vw;
+    line-height: 17vw;
+  }
+  
+  h2{
+    font-size: 11vw;
+    line-height: 14vw;
+  }
+  
+  h3{
+    font-size: 6vw;
+    font-family: Roboto;
+    font-weight: 600;
+  }
+  
+  p{
+    font-size: 4vw;
+    font-family: Roboto;
+    font-weight: 500;
+  }
+
+  li{
+    font-size: 4vw;
+    font-weight: 400;
+  }
 }

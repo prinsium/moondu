@@ -6,11 +6,11 @@ import Image from "next/image";
 
 export default function Home() {
   return (
-    <>
+<div className="scroll-smooth">
     <Navbar />
     <HomePage />
     <MidSec />
     <Contact />
-    </>
+    </div>
   );
 }
